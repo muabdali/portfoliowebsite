@@ -35,3 +35,23 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+    const helloDiv = document.getElementById("hello");
+  
+    if (helloDiv) {
+      const helloText = helloDiv.textContent;
+      helloDiv.textContent = "";
+      let charIndex = 0;
+  
+      function typeWriter() {
+        if (charIndex < helloText.length) {
+          helloDiv.textContent += helloText.charAt(charIndex);
+          charIndex++;
+          setTimeout(typeWriter, 100);
+        }
+      }
+  
+      typeWriter();
+    }
+  });
+  
