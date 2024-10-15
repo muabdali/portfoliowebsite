@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 document.addEventListener('DOMContentLoaded', function () {
-    const scrollButton = document.getElementById('projectscroll');
+    const scrollButton = document.getElementById('projects');
     const targetElement = document.getElementById('projects');
 
     scrollButton.addEventListener('click', function () {
